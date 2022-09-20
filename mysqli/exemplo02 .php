@@ -1,6 +1,6 @@
 <?php
 
-$conn = new mysqli("localhost", "root", "", "db_php7");
+$conn = new mysqli("localhost", "root", "", "dbphp7");
 
 if($conn->connect_error){
     echo "Error" . $conn->connet_error;
