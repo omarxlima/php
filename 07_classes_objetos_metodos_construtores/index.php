@@ -22,7 +22,7 @@ try {
     echo $cachorro->come("cookie");
     echo $cachorro->latir();
 
-    echo $cachorro->nome;
+    // echo $cachorro->nome;
     
 } catch (Exception $e) {
     echo $e->getMessage();
