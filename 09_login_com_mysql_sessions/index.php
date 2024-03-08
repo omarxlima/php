@@ -31,4 +31,8 @@ try {
 <h3>Bem-vindo  <strong><?=strtoupper($dados_do_usuario->nome) ?></strong> a area restrita</h3>
 
 <a href="index.php?sair=true">Sair</a>
+<hr>
+<a href="cadastrar_categoria.php">Cadastra Categoria</a>
+<hr>
+<a href="index_categoria.php">Listar Categoria</a>
 

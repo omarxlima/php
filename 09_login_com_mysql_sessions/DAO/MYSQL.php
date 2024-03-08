@@ -7,6 +7,8 @@ class MySQL extends PDO
     private $senha = "";
     private $db = "sistema_php";
 
+    private $opcoes = array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION);
+
     public function __construct()
     {
         
@@ -16,7 +18,7 @@ class MySQL extends PDO
             
             $dsn = "mysql:host=". $this->host .";dbname=" . $this->db;
             //PHP Data Object
-            return parent::__construct($dsn, $this->usuario, $this->senha); //::statico () ; -> instancia de um objeto(conteudo da classe), memoria do objeto; 
+            return parent::__construct($dsn, $this->usuario, $this->senha, $this->opcoes); //::statico () ; -> instancia de um objeto(conteudo da classe), memoria do objeto; 
 
         } catch (Exception $e) {
             echo $e->getMessage();
